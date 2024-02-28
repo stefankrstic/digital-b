@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Landing from "@/components/Landing";
 import moment from "moment";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -20,68 +21,84 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap">
                         <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <button className="border-2" type="button">
-                                <div className="px-6">
-                                    <img
-                                        alt="..."
-                                        src="/YouTube-unsplash.jpg"
-                                        className="shadow-lg mx-auto max-w-330-px mt-6"
-                                    />
-                                    <div className="pt-6 text-center">
-                                        <h5 className="text-xl font-medium">How progressive Web app works</h5>
-                                        <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">YouTube</p>
-                                        <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                            <div className="border-2">
+                                <Link href="https://www.youtube.com/" target="_blank">
+                                    <div className="px-6">
+                                        <img
+                                            alt="..."
+                                            src="/YouTube-unsplash.jpg"
+                                            className="shadow-lg mx-auto max-w-330-px mt-6"
+                                        />
+                                        <div className="pt-6 text-center">
+                                            <h5 className="text-xl font-medium">How progressive Web app works</h5>
+                                            <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">
+                                                YouTube
+                                            </p>
+                                            <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
+                                </Link>
+                            </div>
                         </div>
                         <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <button className="border-2" type="button">
-                                <div className="px-6">
-                                    <img
-                                        alt="..."
-                                        src="/Instagram-unsplash.jpg"
-                                        className="shadow-lg mx-auto max-w-330-px mt-6"
-                                    />
-                                    <div className="pt-6 text-center">
-                                        <h5 className="text-xl font-medium">How progressive Web app works</h5>
-                                        <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">Instagram</p>
-                                        <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                            <div className="border-2">
+                                <Link href="https://www.instagram.com/" target="_blank">
+                                    <div className="px-6">
+                                        <img
+                                            alt="..."
+                                            src="/Instagram-unsplash.jpg"
+                                            className="shadow-lg mx-auto max-w-330-px mt-6"
+                                        />
+                                        <div className="pt-6 text-center">
+                                            <h5 className="text-xl font-medium">How progressive Web app works</h5>
+                                            <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">
+                                                Instagram
+                                            </p>
+                                            <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
+                                </Link>
+                            </div>
                         </div>
                         <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <button className="border-2" type="button">
-                                <div className="px-6">
-                                    <img
-                                        alt="..."
-                                        src="/Twitter-unsplash.jpg"
-                                        className="shadow-lg  mx-auto max-w-330-px mt-6"
-                                    />
-                                    <div className="pt-6 text-center">
-                                        <h5 className="text-xl font-medium">How progressive Web app works</h5>
-                                        <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">Twitter</p>
-                                        <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                            <div className="border-2">
+                                <Link href="https://twitter.com/?lang=en" target="_blank">
+                                    <div className="px-6">
+                                        <img
+                                            alt="..."
+                                            src="/Twitter-unsplash.jpg"
+                                            className="shadow-lg  mx-auto max-w-330-px mt-6"
+                                        />
+                                        <div className="pt-6 text-center">
+                                            <h5 className="text-xl font-medium">How progressive Web app works</h5>
+                                            <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">
+                                                Twitter
+                                            </p>
+                                            <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
+                                </Link>
+                            </div>
                         </div>
                         <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <button className="border-2" type="button">
-                                <div className="px-6">
-                                    <img
-                                        alt="..."
-                                        src="/Facebook-unsplash.jpg"
-                                        className="shadow-lg  mx-auto max-w-330-px mt-6"
-                                    />
-                                    <div className="pt-6 text-center">
-                                        <h5 className="text-xl font-medium">How progressive Web app works</h5>
-                                        <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">Facebook</p>
-                                        <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                            <div className="border-2">
+                                <Link href="https://www.facebook.com/" target="_blank">
+                                    <div className="px-6">
+                                        <img
+                                            alt="..."
+                                            src="/Facebook-unsplash.jpg"
+                                            className="shadow-lg  mx-auto max-w-330-px mt-6"
+                                        />
+                                        <div className="pt-6 text-center">
+                                            <h5 className="text-xl font-medium">How progressive Web app works</h5>
+                                            <p className="mt-1 text-sm text-gray-400 uppercase font-semibold">
+                                                Facebook
+                                            </p>
+                                            <div className="mt-6 mb-6">{moment().format("ll")}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
