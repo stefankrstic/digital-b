@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Header() {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
         <>
@@ -10,7 +10,7 @@ export default function Navbar() {
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link
                             href="/"
-                            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                            className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                         >
                             Digital B
                         </Link>
@@ -19,20 +19,20 @@ export default function Navbar() {
                             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
-                            <i class="fa-solid fa-bars"></i>
+                            <i class="text-white fa-solid fa-bars"></i>
                         </button>
                     </div>
                     <div
                         className={
                             "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
-                            (navbarOpen ? " block rounded shadow-lg" : " hidden")
+                            (navbarOpen ? "block rounded shadow-lg" : " hidden")
                         }
                     >
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="flex items-center">
                                 <Link
                                     href="/"
-                                    className="text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="lg:text-white text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
                                 >
                                     Home
                                 </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
                             <li className="flex items-center">
                                 <Link
                                     href="/"
-                                    className="text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="lg:text-white text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
                                 >
                                     About
                                 </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
                             <li className="flex items-center">
                                 <Link
                                     href="/"
-                                    className="text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="lg:text-white text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
                                 >
                                     Blog
                                 </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
                             <li className="flex items-center">
                                 <Link
                                     href="/"
-                                    className="text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="lg:text-white text-gray-700 px-3 py-4 lg:hover:text-gray-200 lg:py-2 flex items-center text-xs uppercase font-bold"
                                 >
                                     Contact
                                 </Link>
